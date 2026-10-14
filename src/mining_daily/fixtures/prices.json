@@ -1,0 +1,57 @@
+[
+  {
+    "commodity": "lithium",
+    "date": "2026-10-08",
+    "price": 12.0,
+    "currency": "USD",
+    "unit": "kg",
+    "exchange": "LME",
+    "contract": "SYNTHETIC lithium hydroxide contract fixture",
+    "source_url": "demo://prices/lithium",
+    "synthetic": true
+  },
+  {
+    "commodity": "lithium",
+    "date": "2026-10-09",
+    "price": 12.2,
+    "currency": "USD",
+    "unit": "kg",
+    "exchange": "LME",
+    "contract": "SYNTHETIC lithium hydroxide contract fixture",
+    "source_url": "demo://prices/lithium",
+    "synthetic": true
+  },
+  {
+    "commodity": "lithium",
+    "date": "2026-10-12",
+    "price": 12.1,
+    "currency": "USD",
+    "unit": "kg",
+    "exchange": "LME",
+    "contract": "SYNTHETIC lithium hydroxide contract fixture",
+    "source_url": "demo://prices/lithium",
+    "synthetic": true
+  },
+  {
+    "commodity": "lithium",
+    "date": "2026-10-13",
+    "price": 12.4,
+    "currency": "USD",
+    "unit": "kg",
+    "exchange": "LME",
+    "contract": "SYNTHETIC lithium hydroxide contract fixture",
+    "source_url": "demo://prices/lithium",
+    "synthetic": true
+  },
+  {
+    "commodity": "lithium",
+    "date": "2026-10-14",
+    "price": 12.5,
+    "currency": "USD",
+    "unit": "kg",
+    "exchange": "LME",
+    "contract": "SYNTHETIC lithium hydroxide contract fixture",
+    "source_url": "demo://prices/lithium",
+    "synthetic": true
+  }
+]

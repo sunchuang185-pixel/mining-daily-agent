@@ -1,0 +1,133 @@
+{
+  "records": [
+    {
+      "project": "Pilbara Demo",
+      "deposit": "Synthetic Deposit",
+      "effective_date": "2026-06-30",
+      "standard": "JORC",
+      "category": "Indicated",
+      "commodity": "Li2O",
+      "basis": "inclusive_of_reserves",
+      "cutoff": "0.2% Li2O",
+      "identity_evidence": [
+        {
+          "page": 1,
+          "quote": "Project: Pilbara Demo; Deposit: Synthetic Deposit"
+        },
+        {
+          "page": 1,
+          "quote": "Effective date: 2026-06-30; Reporting standard: JORC"
+        },
+        {
+          "page": 1,
+          "quote": "Resource basis: inclusive of reserves; Cutoff: 0.2% Li2O"
+        }
+      ],
+      "category_evidence": {
+        "page": 2,
+        "quote": "Indicated 100.0 1.2 1200000"
+      },
+      "ore": {
+        "value": 100.0,
+        "unit": "Mt",
+        "evidence": {
+          "page": 2,
+          "quote": "Indicated 100.0 1.2 1200000"
+        },
+        "unit_evidence": {
+          "page": 2,
+          "quote": "Category | Ore (Mt) | Li2O grade (%) | Contained Li2O (t)"
+        }
+      },
+      "grade": {
+        "value": 1.2,
+        "unit": "%",
+        "evidence": {
+          "page": 2,
+          "quote": "Indicated 100.0 1.2 1200000"
+        },
+        "unit_evidence": {
+          "page": 2,
+          "quote": "Category | Ore (Mt) | Li2O grade (%) | Contained Li2O (t)"
+        }
+      },
+      "contained_metal": {
+        "value": 1200000.0,
+        "unit": "t",
+        "evidence": {
+          "page": 2,
+          "quote": "Indicated 100.0 1.2 1200000"
+        },
+        "unit_evidence": {
+          "page": 2,
+          "quote": "Category | Ore (Mt) | Li2O grade (%) | Contained Li2O (t)"
+        }
+      }
+    },
+    {
+      "project": "Pilbara Demo",
+      "deposit": "Synthetic Deposit",
+      "effective_date": "2026-06-30",
+      "standard": "JORC",
+      "category": "Inferred",
+      "commodity": "Li2O",
+      "basis": "inclusive_of_reserves",
+      "cutoff": "0.2% Li2O",
+      "identity_evidence": [
+        {
+          "page": 1,
+          "quote": "Project: Pilbara Demo; Deposit: Synthetic Deposit"
+        },
+        {
+          "page": 1,
+          "quote": "Effective date: 2026-06-30; Reporting standard: JORC"
+        },
+        {
+          "page": 1,
+          "quote": "Resource basis: inclusive of reserves; Cutoff: 0.2% Li2O"
+        }
+      ],
+      "category_evidence": {
+        "page": 2,
+        "quote": "Inferred 50.0 0.9 450000"
+      },
+      "ore": {
+        "value": 50.0,
+        "unit": "Mt",
+        "evidence": {
+          "page": 2,
+          "quote": "Inferred 50.0 0.9 450000"
+        },
+        "unit_evidence": {
+          "page": 2,
+          "quote": "Category | Ore (Mt) | Li2O grade (%) | Contained Li2O (t)"
+        }
+      },
+      "grade": {
+        "value": 0.9,
+        "unit": "%",
+        "evidence": {
+          "page": 2,
+          "quote": "Inferred 50.0 0.9 450000"
+        },
+        "unit_evidence": {
+          "page": 2,
+          "quote": "Category | Ore (Mt) | Li2O grade (%) | Contained Li2O (t)"
+        }
+      },
+      "contained_metal": {
+        "value": 450000.0,
+        "unit": "t",
+        "evidence": {
+          "page": 2,
+          "quote": "Inferred 50.0 0.9 450000"
+        },
+        "unit_evidence": {
+          "page": 2,
+          "quote": "Category | Ore (Mt) | Li2O grade (%) | Contained Li2O (t)"
+        }
+      }
+    }
+  ],
+  "missing_reason": ""
+}

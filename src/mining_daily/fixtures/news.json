@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Pilbara Demo announces a synthetic operating update",
+    "url": "demo://news/operations",
+    "published_at": "2026-10-13T08:00:00Z",
+    "publisher": "Synthetic fixture",
+    "summary": "Synthetic maintenance review. Invented news for testing."
+  },
+  {
+    "title": "Pilbara Demo reviews synthetic expansion timetable",
+    "url": "demo://news/expansion",
+    "published_at": "2026-10-12T08:00:00Z",
+    "publisher": "Synthetic fixture",
+    "summary": "Synthetic expansion review. Not a real announcement."
+  }
+]
