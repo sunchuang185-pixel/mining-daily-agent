@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "mining-daily-agent"
 version = "0.1.0"
-description = "Three MCP servers and an evidence-first mining daily briefing agent"
+description = "基于三个 MCP 服务、提供可追溯证据的矿权日报 Agent"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [

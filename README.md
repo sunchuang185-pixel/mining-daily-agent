@@ -19,6 +19,8 @@ mining-daily brief '给我生成一份关于 Pilbara 锂矿的今日简报'
 
 完整说明见 [RUN.md](RUN.md)，实现边界见 [架构与取舍](docs/architecture.md)。
 
+演示新闻、PDF 说明、矿区名称、日报提示及命令行帮助使用中文。查看[中文示例日报](examples/demo-brief.md)和[缺失日期示例](examples/missing-date-brief.md)。资源分类展示中文及原始术语；MCP 工具名、JSON 字段、枚举值和计量单位保留标准标识，以便接口调用与证据核对。真实新闻与 PDF 引用保留来源原文，不自动翻译引用证据。
+
 ## 题目要求对应
 
 | 要求 | 实现 |
