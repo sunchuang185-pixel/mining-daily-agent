@@ -6,15 +6,15 @@
 |---|---|
 | `uv sync --locked` | 成功建立独立环境并安装锁定依赖 |
 | `ruff check .` | 通过 |
-| `ruff format --check .` | 33 个 Python 文件格式通过 |
+| `ruff format --check .` | 35 个 Python 文件格式通过 |
 | `mypy` | 19 个源文件通过严格类型检查 |
-| `pytest` | **50 passed**；最近一次锁定环境运行约 6.48 秒 |
+| `pytest` | **50 passed**；中文样例更新后重新通过 |
 | 源码／wheel 构建 | 成功生成 sdist 与 wheel |
 | 干净环境 wheel 安装 | 安装后从仓库外运行默认简报成功，fixture 已包含在安装包 |
 | 真实 MCP 协议 | 3 个独立子进程、5 个工具发现，默认简报 6 次成功调用 |
 | 标准演示输出 | `examples/demo-brief.md` 与同名 JSON |
 | 缺失日期演示 | `examples/missing-date-brief.md`；不把前一日价格当成指定日报价 |
-| PDF fixture | 两页均已渲染并检查；原文引用、物理页码、文件哈希验证通过 |
+| PDF fixture | 中文字体已嵌入；两页均已渲染检查，原文引用、物理页码、文件哈希验证通过 |
 | live 模式降级 | MINING.COM Feed 返回 HTTP 403；无 PDF／行情配置时生成明确缺口，不填入 demo 数据 |
 
 PyMuPDF 在当前 Python 版本下有 5 条 SWIG 类型相关 DeprecationWarning；没有测试失败。此处的 50 个测试并不代表在 50 份真实矿业报告上验证了准确率。
