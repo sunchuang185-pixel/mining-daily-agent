@@ -44,7 +44,7 @@ def test_other_project_pdf_not_used(demo_result):
     data["plan"]["project"] = "Other Mine"
     report = render_report(data)
     assert "已隐藏资源数值" in report
-    assert "| Synthetic Deposit" not in report
+    assert "| 合成测试矿区" not in report
 
 
 def test_source_markup_cannot_inject_html(demo_result):
@@ -56,7 +56,7 @@ def test_source_markup_cannot_inject_html(demo_result):
 
 
 def test_unknown_project_requires_explicit_scope():
-    with pytest.raises(ValueError, match="Unknown project"):
+    with pytest.raises(ValueError, match="无法识别项目"):
         make_plan("随便写一些矿业新闻")
 
 

@@ -41,14 +41,14 @@ def test_mixed_contracts_rejected(monkeypatch):
 
 def test_live_cannot_use_synthetic_prices():
     points = [PricePoint.model_validate(x) for x in fixture("prices.json")]
-    with pytest.raises(ValueError, match="Synthetic"):
+    with pytest.raises(ValueError, match="合成报价"):
         validate_series(points, live=True)
 
 
 def test_conflicting_duplicate_price_rejected():
     point = PricePoint.model_validate(fixture("prices.json")[0])
     altered = point.model_copy(update={"price": point.price + 1})
-    with pytest.raises(ValueError, match="Conflicting"):
+    with pytest.raises(ValueError, match="存在冲突"):
         validate_series([point, altered], live=False)
 
 
@@ -62,7 +62,7 @@ def test_missing_live_feed_is_explicit(monkeypatch):
     monkeypatch.setenv("MINING_MODE", "live")
     response = asyncio.run(get_trend("lithium", 7))
     assert response.status == "unavailable"
-    assert "No live LME feed" in " ".join(response.warnings)
+    assert "未配置真实 LME 数据源" in " ".join(response.warnings)
 
 
 def test_live_csv_path(tmp_path, monkeypatch):
