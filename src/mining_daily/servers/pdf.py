@@ -9,7 +9,7 @@ mcp = FastMCP("mineral-pdf-mcp")
 
 @mcp.tool()
 async def extract_resources(pdf_url: str) -> dict[str, Any]:
-    """Extract cited Indicated/Inferred resources, preserving standard, date and units."""
+    """提取带证据引用的 Indicated／Inferred 资源量，保留披露标准、日期和原始单位。"""
     return (await extract(pdf_url)).model_dump(mode="json")
 
 
