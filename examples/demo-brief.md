@@ -6,10 +6,10 @@
 
 ## 新闻摘要
 
-- **Pilbara Demo announces a synthetic operating update**（2026-10-13）[S1]
-  原文摘录：Synthetic maintenance review. Invented news for testing.
-- **Pilbara Demo reviews synthetic expansion timetable**（2026-10-12）[S2]
-  原文摘录：Synthetic expansion review. Not a real announcement.
+- **Pilbara 演示项目发布运营维护进展（合成新闻）**（2026-10-13）[S1]
+  原文摘录：演示项目正在评估选矿设备的维护安排。此内容为软件测试虚构，不代表真实运营情况。
+- **Pilbara 演示项目评估扩建时间表（合成新闻）**（2026-10-12）[S2]
+  原文摘录：演示项目正在复核扩建阶段的施工计划。此内容为软件测试虚构，不属于公司公告。
 
 ## 资源量与报告口径
 
@@ -17,15 +17,15 @@
 
 | 矿区 | 分类 | 矿石量 | 品位 | 披露金属／氧化物量 | 日期／标准 |
 |---|---|---:|---:|---:|---|
-| Synthetic Deposit | Indicated | 100 Mt | 1.2 % Li2O | 1.2e+06 t | 2026-06-30 / JORC |
-| Synthetic Deposit | Inferred | 50 Mt | 0.9 % Li2O | 450000 t | 2026-06-30 / JORC |
+| 合成测试矿区 | 控制资源量（Indicated） | 100 Mt | 1.2 % Li2O | 1.2e+06 t | 2026-06-30 / JORC |
+| 合成测试矿区 | 推断资源量（Inferred） | 50 Mt | 0.9 % Li2O | 450000 t | 2026-06-30 / JORC |
 
-- Synthetic Deposit Indicated：cut-off `0.2% Li2O`；储量包含口径 `inclusive_of_reserves`；PDF 第 2 页。[S3]
-- Synthetic Deposit Inferred：cut-off `0.2% Li2O`；储量包含口径 `inclusive_of_reserves`；PDF 第 2 页。[S3]
+- 合成测试矿区 控制资源量（Indicated）：边界品位 `0.2% Li2O`；资源口径：包含储量；PDF 第 2 页。[S3]
+- 合成测试矿区 推断资源量（Inferred）：边界品位 `0.2% Li2O`；资源口径：包含储量；PDF 第 2 页。[S3]
 
 ## 价格与走势
 
-指定日期 2026-10-14：**12.5 USD/kg**；SYNTHETIC lithium hydroxide contract fixture。[S4]
+指定日期 2026-10-14：**12.5 USD/kg**；氢氧化锂合约（合成测试报价）。[S4]
 
 | 观测日期 | 价格 |
 |---|---:|
@@ -41,7 +41,6 @@
 
 - 该资源数据按 JORC 披露，不能称为 NI 43-101 报告。
 - 氢氧化锂合约、锂辉石精矿报价及矿石中的 Li2O 含量口径不同，不可直接替代。
-- Lithium hydroxide contract is not spodumene concentrate or Li2O resource value
 - 新闻采用带来源的摘录；未从新闻或资源表推断采矿权法律状态。
 
 ## 引用来源

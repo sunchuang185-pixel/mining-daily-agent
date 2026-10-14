@@ -14,11 +14,11 @@
 
 | 矿区 | 分类 | 矿石量 | 品位 | 披露金属／氧化物量 | 日期／标准 |
 |---|---|---:|---:|---:|---|
-| Synthetic Deposit | Indicated | 100 Mt | 1.2 % Li2O | 1.2e+06 t | 2026-06-30 / JORC |
-| Synthetic Deposit | Inferred | 50 Mt | 0.9 % Li2O | 450000 t | 2026-06-30 / JORC |
+| 合成测试矿区 | 控制资源量（Indicated） | 100 Mt | 1.2 % Li2O | 1.2e+06 t | 2026-06-30 / JORC |
+| 合成测试矿区 | 推断资源量（Inferred） | 50 Mt | 0.9 % Li2O | 450000 t | 2026-06-30 / JORC |
 
-- Synthetic Deposit Indicated：cut-off `0.2% Li2O`；储量包含口径 `inclusive_of_reserves`；PDF 第 2 页。[S1]
-- Synthetic Deposit Inferred：cut-off `0.2% Li2O`；储量包含口径 `inclusive_of_reserves`；PDF 第 2 页。[S1]
+- 合成测试矿区 控制资源量（Indicated）：边界品位 `0.2% Li2O`；资源口径：包含储量；PDF 第 2 页。[S1]
+- 合成测试矿区 推断资源量（Inferred）：边界品位 `0.2% Li2O`；资源口径：包含储量；PDF 第 2 页。[S1]
 
 ## 价格与走势
 
@@ -35,12 +35,11 @@
 
 - 该资源数据按 JORC 披露，不能称为 NI 43-101 报告。
 - 氢氧化锂合约、锂辉石精矿报价及矿石中的 Li2O 含量口径不同，不可直接替代。
-- news 数据状态：partial。
-- No dated matching entries in the configured feeds; this is not proof of no news
-- price 数据状态：unavailable。
-- Lithium hydroxide contract is not spodumene concentrate or Li2O resource value
-- No quote in requested date window; no forward-fill or invented price
-- Latest observation is 2026-10-09; as-of date is 2026-10-10
+- 新闻数据状态：部分可用。
+- 配置的来源中未找到带日期且匹配项目的条目；这不能证明没有相关新闻
+- 当日报价数据状态：不可用。
+- 请求的日期窗口内无报价；未沿用上一交易日报价，也未编造价格
+- 最近观测日期为 2026-10-09；报告日期为 2026-10-10
 - 新闻采用带来源的摘录；未从新闻或资源表推断采矿权法律状态。
 
 ## 引用来源
