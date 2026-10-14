@@ -31,14 +31,12 @@ async def extract_resources(pdf_url: str) -> ToolResponse:
         if mode() == "demo":
             if pdf_url != "demo://pilbara-resources.pdf":
                 return ToolResponse(
-                    status="unavailable", mode="demo", warnings=["Unknown demo PDF"]
+                    status="unavailable", mode="demo", warnings=["未识别的演示 PDF"]
                 )
             with as_file(files("mining_daily").joinpath("fixtures", "resources.pdf")) as path:
                 doc = read_pdf(path)
             candidate = Candidate.model_validate(fixture("resources.json"))
-            warnings = [
-                "SYNTHETIC_DEMO: fixture response is replayed and checked against a generated PDF"
-            ]
+            warnings = ["SYNTHETIC_DEMO：回放合成提取结果，并与生成的 PDF 逐项核验证据"]
         else:
             blob, pdf_url = await fetch(pdf_url, max_bytes=50 * 1024 * 1024)
             with tempfile.TemporaryDirectory(prefix="mining-pdf-") as directory:
@@ -56,9 +54,7 @@ async def extract_resources(pdf_url: str) -> ToolResponse:
                 },
             )
             candidate = Candidate.model_validate(raw)
-            warnings = [
-                "Automatic extraction requires human review for investment or reserve decisions"
-            ]
+            warnings = ["自动提取结果用于投资或储量决策前，须经人工复核"]
         issues = validate(candidate, doc)
         if issues:
             return ToolResponse(
@@ -70,7 +66,7 @@ async def extract_resources(pdf_url: str) -> ToolResponse:
                     "issues": [i.model_dump() for i in issues],
                     "selected_pages": [p.number for p in doc.pages],
                 },
-                warnings=[*warnings, "Evidence validation failed; candidate values withheld"],
+                warnings=[*warnings, "证据校验未通过，候选数值已隐藏"],
                 sources=[pdf_url],
             )
         return ToolResponse(

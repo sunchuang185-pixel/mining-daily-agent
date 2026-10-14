@@ -72,7 +72,7 @@ def parse_feed(blob: bytes, query: str, days: int) -> list[NewsItem]:
 
 async def search_news(query: str, days: int) -> ToolResponse:
     if not query.strip() or len(query) > 200 or not 1 <= days <= 90:
-        raise ValueError("query must be 1–200 characters and days must be 1–90")
+        raise ValueError("query 长度须为 1–200 个字符，days 须为 1–90")
     warnings: list[str] = []
     if mode() == "demo":
         items = [NewsItem.model_validate(x) for x in fixture("news.json")]
@@ -83,16 +83,16 @@ async def search_news(query: str, days: int) -> ToolResponse:
             if start <= x.published_at.date() <= today() and relevant(query, x.title)
         ]
         sources = [x.url for x in items]
-        warnings.append("SYNTHETIC_DEMO: fixtures are invented, not current market news")
+        warnings.append("SYNTHETIC_DEMO：样例内容均为虚构，并非当前市场新闻")
     else:
         feeds = os.getenv("NEWS_RSS_URLS", "https://www.mining.com/feed/").split(",")
         if len(feeds) > 5:
-            raise ValueError("At most 5 RSS feeds are supported")
+            raise ValueError("最多支持 5 个 RSS 来源")
         responses = await asyncio.gather(*(fetch(u.strip()) for u in feeds), return_exceptions=True)
         items, sources = [], []
         for response in responses:
             if isinstance(response, BaseException):
-                warnings.append(f"RSS unavailable: {type(response).__name__}")
+                warnings.append(f"RSS 来源不可用： {type(response).__name__}")
                 continue
             blob, source = response
             sources.append(source)
@@ -103,9 +103,7 @@ async def search_news(query: str, days: int) -> ToolResponse:
         "ok" if selected and not (mode() == "live" and warnings) else "partial"
     )
     if not selected:
-        warnings.append(
-            "No dated matching entries in the configured feeds; this is not proof of no news"
-        )
+        warnings.append("配置的来源中未找到带日期且匹配项目的条目；这不能证明没有相关新闻")
     return ToolResponse(
         status=status,
         mode=mode(),
@@ -119,7 +117,7 @@ async def fetch_article(url: str) -> ToolResponse:
     if mode() == "demo":
         item = next((x for x in fixture("news.json") if x["url"] == url), None)
         if item is None:
-            return ToolResponse(status="unavailable", mode="demo", warnings=["Unknown demo URL"])
+            return ToolResponse(status="unavailable", mode="demo", warnings=["未识别的演示 URL"])
         return ToolResponse(
             status="ok",
             mode="demo",
@@ -144,7 +142,7 @@ async def fetch_article(url: str) -> ToolResponse:
             return ToolResponse(
                 status="unavailable",
                 mode="live",
-                warnings=["Readable article body unavailable; paywalls are not bypassed"],
+                warnings=["无法获取可读正文；系统不会绕过付费墙"],
                 sources=[final_url],
             )
         return ToolResponse(

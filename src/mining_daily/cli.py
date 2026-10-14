@@ -18,7 +18,7 @@ app = typer.Typer(help="矿权日报 Agent：3 个 MCP Server、可追溯证据�
 @app.command()
 def brief(
     prompt: str = typer.Argument("给我生成一份关于 Pilbara 锂矿的今日简报"),
-    mode: str = typer.Option("demo", help="demo or live"),
+    mode: str = typer.Option("demo", help="demo：离线演示；live：真实数据"),
     project: str | None = None,
     commodity: str | None = None,
     days: int = 7,
@@ -26,15 +26,15 @@ def brief(
     pdf_url: str | None = None,
     output: Path = Path("runs/brief.md"),
 ) -> None:
-    """Generate Markdown plus machine-readable evidence and MCP call trace."""
+    """生成 Markdown 日报，以及包含证据和 MCP 调用记录的 JSON 文件。"""
     if mode not in {"demo", "live"}:
-        raise typer.BadParameter("mode must be demo or live")
+        raise typer.BadParameter("mode 须为 demo 或 live")
     os.environ["MINING_MODE"] = mode
     if as_of:
         try:
             date.fromisoformat(as_of)
         except ValueError as exc:
-            raise typer.BadParameter("as-of must be YYYY-MM-DD") from exc
+            raise typer.BadParameter("as-of 日期格式须为 YYYY-MM-DD") from exc
         os.environ["MINING_AS_OF"] = as_of
     elif mode == "demo":
         os.environ["MINING_AS_OF"] = DEMO_DATE.isoformat()
@@ -50,12 +50,12 @@ def brief(
     output.with_suffix(".json").write_text(
         json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8"
     )
-    typer.echo(f"Markdown: {output}\nEvidence: {output.with_suffix('.json')}\nMode: {mode}")
+    typer.echo(f"日报：{output}\n证据：{output.with_suffix('.json')}\n运行模式：{mode}")
 
 
 @app.command()
 def doctor() -> None:
-    """Initialize all servers and list their actual MCP tools (no external calls)."""
+    """初始化三个服务并列出实际可用的 MCP 工具（不访问外部数据源）。"""
 
     async def inspect() -> dict[str, list[str]]:
         async with MCPTools() as tools:
@@ -66,9 +66,9 @@ def doctor() -> None:
 
 @app.command("mcp-config")
 def mcp_config(output: Path = Path("mcp-config.json"), mode: str = "demo") -> None:
-    """Write Claude Desktop / Cursor stdio config with the current absolute Python path."""
+    """生成 Claude Desktop / Cursor stdio 配置，使用当前 Python 解释器的绝对路径。"""
     if mode not in {"demo", "live"}:
-        raise typer.BadParameter("mode must be demo or live")
+        raise typer.BadParameter("mode 须为 demo 或 live")
     data = {
         "mcpServers": {
             name: {"command": sys.executable, "args": ["-m", module], "env": {"MINING_MODE": mode}}

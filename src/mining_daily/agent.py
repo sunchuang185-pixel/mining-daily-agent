@@ -20,7 +20,7 @@ def make_plan(
         if re.search(r"pilbara|pilgangoora|皮尔巴拉", prompt, re.I):
             project = "Pilbara"
         else:
-            raise ValueError("Unknown project: supply --project and --commodity explicitly")
+            raise ValueError("无法识别项目：请显式提供 --project 和 --commodity")
     if commodity is None:
         for value, pattern in (
             ("lithium", r"lithium|锂|pilbara|pilgangoora"),
@@ -32,7 +32,7 @@ def make_plan(
                 commodity = value
                 break
     if commodity is None:
-        raise ValueError("Cannot identify commodity; supply --commodity")
+        raise ValueError("无法识别矿种：请提供 --commodity")
     if pdf_url is None and mode() == "demo" and project.lower() == "pilbara":
         pdf_url = "demo://pilbara-resources.pdf"
     return BriefPlan.model_validate(
@@ -78,7 +78,7 @@ async def run_agent(plan: BriefPlan) -> dict[str, Any]:
                 status="unavailable",
                 mode=mode(),
                 warnings=[
-                    "No resource PDF located; supply --pdf-url with a verified technical report",
+                    "未找到资源量 PDF；请通过 --pdf-url 提供已核实的技术报告",
                 ],
             )
         )

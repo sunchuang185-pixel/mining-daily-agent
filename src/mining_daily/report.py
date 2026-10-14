@@ -6,6 +6,15 @@ from datetime import date
 from typing import Any
 from urllib.parse import urlparse
 
+CATEGORY_LABELS = {"Indicated": "控制资源量（Indicated）", "Inferred": "推断资源量（Inferred）"}
+BASIS_LABELS = {
+    "inclusive_of_reserves": "包含储量",
+    "exclusive_of_reserves": "不包含储量",
+    "not_stated": "未披露",
+}
+SECTION_LABELS = {"news": "新闻", "resources": "资源量", "price": "当日报价", "trend": "价格走势"}
+STATUS_LABELS = {"ok": "正常", "partial": "部分可用", "unavailable": "不可用", "error": "调用失败"}
+
 
 def escape(value: object) -> str:
     text = html.escape(str(value), quote=False).replace("\n", " ")
@@ -86,15 +95,18 @@ def render_report(result: dict[str, Any]) -> str:
         ]
         for r in valid_records:
             lines.append(
-                f"| {escape(r['deposit'])} | {r['category']} | {quantity(r, 'ore')} | "
+                f"| {escape(r['deposit'])} | {CATEGORY_LABELS[r['category']]} | "
+                f"{quantity(r, 'ore')} | "
                 f"{quantity(r, 'grade')} {r['commodity']} | {quantity(r, 'contained_metal')} | "
                 f"{r['effective_date']} / {r['standard']} |"
             )
         lines.append("")
         for r in valid_records:
             lines.append(
-                f"- {escape(r['deposit'])} {r['category']}：cut-off `{escape(r['cutoff'])}`；"
-                f"储量包含口径 `{r['basis']}`；PDF 第 {r['category_evidence']['page']} 页。"
+                f"- {escape(r['deposit'])} {CATEGORY_LABELS[r['category']]}："
+                f"边界品位 `{escape(r['cutoff'])}`；"
+                f"资源口径：{BASIS_LABELS[r['basis']]}；"
+                f"PDF 第 {r['category_evidence']['page']} 页。"
                 f"{cite(result['resources']['sources'])}"
             )
             age = (date.fromisoformat(plan["as_of"]) - date.fromisoformat(r["effective_date"])).days
@@ -133,7 +145,9 @@ def render_report(result: dict[str, Any]) -> str:
         risks.append("氢氧化锂合约、锂辉石精矿报价及矿石中的 Li2O 含量口径不同，不可直接替代。")
     for section in ("news", "resources", "price", "trend"):
         if result[section]["status"] != "ok":
-            risks.append(f"{section} 数据状态：{result[section]['status']}。")
+            risks.append(
+                f"{SECTION_LABELS[section]}数据状态：{STATUS_LABELS[result[section]['status']]}。"
+            )
         risks.extend(result[section]["warnings"])
     lines += ["", "## 风险与待核验事项", ""]
     lines += [f"- {escape(w)}" for w in dict.fromkeys(risks) if not w.startswith("SYNTHETIC_DEMO")]
