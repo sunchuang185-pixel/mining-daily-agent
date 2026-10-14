@@ -1,0 +1,731 @@
+{
+  "schema_version": "1.0",
+  "mode": "demo",
+  "plan": {
+    "project": "Pilbara",
+    "commodity": "lithium",
+    "days": 7,
+    "as_of": "2026-10-14",
+    "pdf_url": "demo://pilbara-resources.pdf"
+  },
+  "news": {
+    "status": "ok",
+    "mode": "demo",
+    "data": {
+      "items": [
+        {
+          "title": "Pilbara Demo announces a synthetic operating update",
+          "url": "demo://news/operations",
+          "published_at": "2026-10-13T08:00:00Z",
+          "summary": "Synthetic maintenance review. Invented news for testing.",
+          "publisher": "Synthetic fixture"
+        },
+        {
+          "title": "Pilbara Demo reviews synthetic expansion timetable",
+          "url": "demo://news/expansion",
+          "published_at": "2026-10-12T08:00:00Z",
+          "summary": "Synthetic expansion review. Not a real announcement.",
+          "publisher": "Synthetic fixture"
+        }
+      ]
+    },
+    "warnings": [
+      "SYNTHETIC_DEMO: fixtures are invented, not current market news"
+    ],
+    "sources": [
+      "demo://news/operations",
+      "demo://news/expansion"
+    ],
+    "fetched_at": "2026-10-14T10:54:43.116207+00:00"
+  },
+  "articles": [
+    {
+      "item": {
+        "title": "Pilbara Demo announces a synthetic operating update",
+        "url": "demo://news/operations",
+        "published_at": "2026-10-13T08:00:00Z",
+        "summary": "Synthetic maintenance review. Invented news for testing.",
+        "publisher": "Synthetic fixture"
+      },
+      "article": {
+        "status": "ok",
+        "mode": "demo",
+        "data": {
+          "title": "Pilbara Demo announces a synthetic operating update",
+          "text": "Synthetic maintenance review. Invented news for testing.",
+          "pdf_urls": []
+        },
+        "warnings": [
+          "SYNTHETIC_DEMO"
+        ],
+        "sources": [
+          "demo://news/operations"
+        ],
+        "fetched_at": "2026-10-14T10:54:43.119405+00:00"
+      }
+    },
+    {
+      "item": {
+        "title": "Pilbara Demo reviews synthetic expansion timetable",
+        "url": "demo://news/expansion",
+        "published_at": "2026-10-12T08:00:00Z",
+        "summary": "Synthetic expansion review. Not a real announcement.",
+        "publisher": "Synthetic fixture"
+      },
+      "article": {
+        "status": "ok",
+        "mode": "demo",
+        "data": {
+          "title": "Pilbara Demo reviews synthetic expansion timetable",
+          "text": "Synthetic expansion review. Not a real announcement.",
+          "pdf_urls": []
+        },
+        "warnings": [
+          "SYNTHETIC_DEMO"
+        ],
+        "sources": [
+          "demo://news/expansion"
+        ],
+        "fetched_at": "2026-10-14T10:54:43.120754+00:00"
+      }
+    }
+  ],
+  "resources": {
+    "status": "ok",
+    "mode": "demo",
+    "data": {
+      "records": [
+        {
+          "project": "Pilbara Demo",
+          "deposit": "Synthetic Deposit",
+          "effective_date": "2026-06-30",
+          "standard": "JORC",
+          "category": "Indicated",
+          "commodity": "Li2O",
+          "basis": "inclusive_of_reserves",
+          "cutoff": "0.2% Li2O",
+          "identity_evidence": [
+            {
+              "page": 1,
+              "quote": "Project: Pilbara Demo; Deposit: Synthetic Deposit"
+            },
+            {
+              "page": 1,
+              "quote": "Effective date: 2026-06-30; Reporting standard: JORC"
+            },
+            {
+              "page": 1,
+              "quote": "Resource basis: inclusive of reserves; Cutoff: 0.2% Li2O"
+            }
+          ],
+          "category_evidence": {
+            "page": 2,
+            "quote": "Indicated 100.0 1.2 1200000"
+          },
+          "ore": {
+            "value": 100.0,
+            "unit": "Mt",
+            "evidence": {
+              "page": 2,
+              "quote": "Indicated 100.0 1.2 1200000"
+            },
+            "unit_evidence": {
+              "page": 2,
+              "quote": "Category | Ore (Mt) | Li2O grade (%) | Contained Li2O (t)"
+            }
+          },
+          "grade": {
+            "value": 1.2,
+            "unit": "%",
+            "evidence": {
+              "page": 2,
+              "quote": "Indicated 100.0 1.2 1200000"
+            },
+            "unit_evidence": {
+              "page": 2,
+              "quote": "Category | Ore (Mt) | Li2O grade (%) | Contained Li2O (t)"
+            }
+          },
+          "contained_metal": {
+            "value": 1200000.0,
+            "unit": "t",
+            "evidence": {
+              "page": 2,
+              "quote": "Indicated 100.0 1.2 1200000"
+            },
+            "unit_evidence": {
+              "page": 2,
+              "quote": "Category | Ore (Mt) | Li2O grade (%) | Contained Li2O (t)"
+            }
+          }
+        },
+        {
+          "project": "Pilbara Demo",
+          "deposit": "Synthetic Deposit",
+          "effective_date": "2026-06-30",
+          "standard": "JORC",
+          "category": "Inferred",
+          "commodity": "Li2O",
+          "basis": "inclusive_of_reserves",
+          "cutoff": "0.2% Li2O",
+          "identity_evidence": [
+            {
+              "page": 1,
+              "quote": "Project: Pilbara Demo; Deposit: Synthetic Deposit"
+            },
+            {
+              "page": 1,
+              "quote": "Effective date: 2026-06-30; Reporting standard: JORC"
+            },
+            {
+              "page": 1,
+              "quote": "Resource basis: inclusive of reserves; Cutoff: 0.2% Li2O"
+            }
+          ],
+          "category_evidence": {
+            "page": 2,
+            "quote": "Inferred 50.0 0.9 450000"
+          },
+          "ore": {
+            "value": 50.0,
+            "unit": "Mt",
+            "evidence": {
+              "page": 2,
+              "quote": "Inferred 50.0 0.9 450000"
+            },
+            "unit_evidence": {
+              "page": 2,
+              "quote": "Category | Ore (Mt) | Li2O grade (%) | Contained Li2O (t)"
+            }
+          },
+          "grade": {
+            "value": 0.9,
+            "unit": "%",
+            "evidence": {
+              "page": 2,
+              "quote": "Inferred 50.0 0.9 450000"
+            },
+            "unit_evidence": {
+              "page": 2,
+              "quote": "Category | Ore (Mt) | Li2O grade (%) | Contained Li2O (t)"
+            }
+          },
+          "contained_metal": {
+            "value": 450000.0,
+            "unit": "t",
+            "evidence": {
+              "page": 2,
+              "quote": "Inferred 50.0 0.9 450000"
+            },
+            "unit_evidence": {
+              "page": 2,
+              "quote": "Category | Ore (Mt) | Li2O grade (%) | Contained Li2O (t)"
+            }
+          }
+        }
+      ],
+      "document_id": "8ac28e325b07a98b1bb217689d67e212eaa73ef9795469d4124f3eaa4c42230c",
+      "selected_pages": [
+        1,
+        2
+      ],
+      "selection": "all indicated/inferred keyword pages plus adjacent pages"
+    },
+    "warnings": [
+      "SYNTHETIC_DEMO: fixture response is replayed and checked against a generated PDF"
+    ],
+    "sources": [
+      "demo://pilbara-resources.pdf"
+    ],
+    "fetched_at": "2026-10-14T10:54:43.126215+00:00"
+  },
+  "price": {
+    "status": "ok",
+    "mode": "demo",
+    "data": {
+      "points": [
+        {
+          "commodity": "lithium",
+          "date": "2026-10-14",
+          "price": 12.5,
+          "currency": "USD",
+          "unit": "kg",
+          "exchange": "LME",
+          "contract": "SYNTHETIC lithium hydroxide contract fixture",
+          "source_url": "demo://prices/lithium",
+          "synthetic": true
+        }
+      ],
+      "change_pct": null,
+      "window_start": "2026-10-14",
+      "as_of": "2026-10-14",
+      "observations": 1
+    },
+    "warnings": [
+      "SYNTHETIC_DEMO: invented prices, not actual LME quotes",
+      "Lithium hydroxide contract is not spodumene concentrate or Li2O resource value"
+    ],
+    "sources": [
+      "demo://prices/lithium"
+    ],
+    "fetched_at": "2026-10-14T10:54:43.116354+00:00"
+  },
+  "trend": {
+    "status": "ok",
+    "mode": "demo",
+    "data": {
+      "points": [
+        {
+          "commodity": "lithium",
+          "date": "2026-10-08",
+          "price": 12.0,
+          "currency": "USD",
+          "unit": "kg",
+          "exchange": "LME",
+          "contract": "SYNTHETIC lithium hydroxide contract fixture",
+          "source_url": "demo://prices/lithium",
+          "synthetic": true
+        },
+        {
+          "commodity": "lithium",
+          "date": "2026-10-09",
+          "price": 12.2,
+          "currency": "USD",
+          "unit": "kg",
+          "exchange": "LME",
+          "contract": "SYNTHETIC lithium hydroxide contract fixture",
+          "source_url": "demo://prices/lithium",
+          "synthetic": true
+        },
+        {
+          "commodity": "lithium",
+          "date": "2026-10-12",
+          "price": 12.1,
+          "currency": "USD",
+          "unit": "kg",
+          "exchange": "LME",
+          "contract": "SYNTHETIC lithium hydroxide contract fixture",
+          "source_url": "demo://prices/lithium",
+          "synthetic": true
+        },
+        {
+          "commodity": "lithium",
+          "date": "2026-10-13",
+          "price": 12.4,
+          "currency": "USD",
+          "unit": "kg",
+          "exchange": "LME",
+          "contract": "SYNTHETIC lithium hydroxide contract fixture",
+          "source_url": "demo://prices/lithium",
+          "synthetic": true
+        },
+        {
+          "commodity": "lithium",
+          "date": "2026-10-14",
+          "price": 12.5,
+          "currency": "USD",
+          "unit": "kg",
+          "exchange": "LME",
+          "contract": "SYNTHETIC lithium hydroxide contract fixture",
+          "source_url": "demo://prices/lithium",
+          "synthetic": true
+        }
+      ],
+      "change_pct": 4.166666666666674,
+      "window_start": "2026-10-08",
+      "as_of": "2026-10-14",
+      "observations": 5
+    },
+    "warnings": [
+      "SYNTHETIC_DEMO: invented prices, not actual LME quotes",
+      "Lithium hydroxide contract is not spodumene concentrate or Li2O resource value"
+    ],
+    "sources": [
+      "demo://prices/lithium"
+    ],
+    "fetched_at": "2026-10-14T10:54:43.117479+00:00"
+  },
+  "discovered_tools": {
+    "mining-news-mcp": [
+      "fetch_article",
+      "search"
+    ],
+    "mineral-pdf-mcp": [
+      "extract_resources"
+    ],
+    "lme-price-mcp": [
+      "get_price",
+      "get_trend"
+    ]
+  },
+  "trace": [
+    {
+      "server": "mining-news-mcp",
+      "tool": "search",
+      "arguments": {
+        "query": "Pilbara",
+        "days": 7
+      },
+      "response": {
+        "status": "ok",
+        "mode": "demo",
+        "data": {
+          "items": [
+            {
+              "title": "Pilbara Demo announces a synthetic operating update",
+              "url": "demo://news/operations",
+              "published_at": "2026-10-13T08:00:00Z",
+              "summary": "Synthetic maintenance review. Invented news for testing.",
+              "publisher": "Synthetic fixture"
+            },
+            {
+              "title": "Pilbara Demo reviews synthetic expansion timetable",
+              "url": "demo://news/expansion",
+              "published_at": "2026-10-12T08:00:00Z",
+              "summary": "Synthetic expansion review. Not a real announcement.",
+              "publisher": "Synthetic fixture"
+            }
+          ]
+        },
+        "warnings": [
+          "SYNTHETIC_DEMO: fixtures are invented, not current market news"
+        ],
+        "sources": [
+          "demo://news/operations",
+          "demo://news/expansion"
+        ],
+        "fetched_at": "2026-10-14T10:54:43.116207+00:00"
+      },
+      "elapsed_seconds": 0.003
+    },
+    {
+      "server": "lme-price-mcp",
+      "tool": "get_price",
+      "arguments": {
+        "commodity": "lithium",
+        "date": "2026-10-14"
+      },
+      "response": {
+        "status": "ok",
+        "mode": "demo",
+        "data": {
+          "points": [
+            {
+              "commodity": "lithium",
+              "date": "2026-10-14",
+              "price": 12.5,
+              "currency": "USD",
+              "unit": "kg",
+              "exchange": "LME",
+              "contract": "SYNTHETIC lithium hydroxide contract fixture",
+              "source_url": "demo://prices/lithium",
+              "synthetic": true
+            }
+          ],
+          "change_pct": null,
+          "window_start": "2026-10-14",
+          "as_of": "2026-10-14",
+          "observations": 1
+        },
+        "warnings": [
+          "SYNTHETIC_DEMO: invented prices, not actual LME quotes",
+          "Lithium hydroxide contract is not spodumene concentrate or Li2O resource value"
+        ],
+        "sources": [
+          "demo://prices/lithium"
+        ],
+        "fetched_at": "2026-10-14T10:54:43.116354+00:00"
+      },
+      "elapsed_seconds": 0.003
+    },
+    {
+      "server": "lme-price-mcp",
+      "tool": "get_trend",
+      "arguments": {
+        "commodity": "lithium",
+        "days": 7
+      },
+      "response": {
+        "status": "ok",
+        "mode": "demo",
+        "data": {
+          "points": [
+            {
+              "commodity": "lithium",
+              "date": "2026-10-08",
+              "price": 12.0,
+              "currency": "USD",
+              "unit": "kg",
+              "exchange": "LME",
+              "contract": "SYNTHETIC lithium hydroxide contract fixture",
+              "source_url": "demo://prices/lithium",
+              "synthetic": true
+            },
+            {
+              "commodity": "lithium",
+              "date": "2026-10-09",
+              "price": 12.2,
+              "currency": "USD",
+              "unit": "kg",
+              "exchange": "LME",
+              "contract": "SYNTHETIC lithium hydroxide contract fixture",
+              "source_url": "demo://prices/lithium",
+              "synthetic": true
+            },
+            {
+              "commodity": "lithium",
+              "date": "2026-10-12",
+              "price": 12.1,
+              "currency": "USD",
+              "unit": "kg",
+              "exchange": "LME",
+              "contract": "SYNTHETIC lithium hydroxide contract fixture",
+              "source_url": "demo://prices/lithium",
+              "synthetic": true
+            },
+            {
+              "commodity": "lithium",
+              "date": "2026-10-13",
+              "price": 12.4,
+              "currency": "USD",
+              "unit": "kg",
+              "exchange": "LME",
+              "contract": "SYNTHETIC lithium hydroxide contract fixture",
+              "source_url": "demo://prices/lithium",
+              "synthetic": true
+            },
+            {
+              "commodity": "lithium",
+              "date": "2026-10-14",
+              "price": 12.5,
+              "currency": "USD",
+              "unit": "kg",
+              "exchange": "LME",
+              "contract": "SYNTHETIC lithium hydroxide contract fixture",
+              "source_url": "demo://prices/lithium",
+              "synthetic": true
+            }
+          ],
+          "change_pct": 4.166666666666674,
+          "window_start": "2026-10-08",
+          "as_of": "2026-10-14",
+          "observations": 5
+        },
+        "warnings": [
+          "SYNTHETIC_DEMO: invented prices, not actual LME quotes",
+          "Lithium hydroxide contract is not spodumene concentrate or Li2O resource value"
+        ],
+        "sources": [
+          "demo://prices/lithium"
+        ],
+        "fetched_at": "2026-10-14T10:54:43.117479+00:00"
+      },
+      "elapsed_seconds": 0.004
+    },
+    {
+      "server": "mining-news-mcp",
+      "tool": "fetch_article",
+      "arguments": {
+        "url": "demo://news/operations"
+      },
+      "response": {
+        "status": "ok",
+        "mode": "demo",
+        "data": {
+          "title": "Pilbara Demo announces a synthetic operating update",
+          "text": "Synthetic maintenance review. Invented news for testing.",
+          "pdf_urls": []
+        },
+        "warnings": [
+          "SYNTHETIC_DEMO"
+        ],
+        "sources": [
+          "demo://news/operations"
+        ],
+        "fetched_at": "2026-10-14T10:54:43.119405+00:00"
+      },
+      "elapsed_seconds": 0.002
+    },
+    {
+      "server": "mining-news-mcp",
+      "tool": "fetch_article",
+      "arguments": {
+        "url": "demo://news/expansion"
+      },
+      "response": {
+        "status": "ok",
+        "mode": "demo",
+        "data": {
+          "title": "Pilbara Demo reviews synthetic expansion timetable",
+          "text": "Synthetic expansion review. Not a real announcement.",
+          "pdf_urls": []
+        },
+        "warnings": [
+          "SYNTHETIC_DEMO"
+        ],
+        "sources": [
+          "demo://news/expansion"
+        ],
+        "fetched_at": "2026-10-14T10:54:43.120754+00:00"
+      },
+      "elapsed_seconds": 0.001
+    },
+    {
+      "server": "mineral-pdf-mcp",
+      "tool": "extract_resources",
+      "arguments": {
+        "pdf_url": "demo://pilbara-resources.pdf"
+      },
+      "response": {
+        "status": "ok",
+        "mode": "demo",
+        "data": {
+          "records": [
+            {
+              "project": "Pilbara Demo",
+              "deposit": "Synthetic Deposit",
+              "effective_date": "2026-06-30",
+              "standard": "JORC",
+              "category": "Indicated",
+              "commodity": "Li2O",
+              "basis": "inclusive_of_reserves",
+              "cutoff": "0.2% Li2O",
+              "identity_evidence": [
+                {
+                  "page": 1,
+                  "quote": "Project: Pilbara Demo; Deposit: Synthetic Deposit"
+                },
+                {
+                  "page": 1,
+                  "quote": "Effective date: 2026-06-30; Reporting standard: JORC"
+                },
+                {
+                  "page": 1,
+                  "quote": "Resource basis: inclusive of reserves; Cutoff: 0.2% Li2O"
+                }
+              ],
+              "category_evidence": {
+                "page": 2,
+                "quote": "Indicated 100.0 1.2 1200000"
+              },
+              "ore": {
+                "value": 100.0,
+                "unit": "Mt",
+                "evidence": {
+                  "page": 2,
+                  "quote": "Indicated 100.0 1.2 1200000"
+                },
+                "unit_evidence": {
+                  "page": 2,
+                  "quote": "Category | Ore (Mt) | Li2O grade (%) | Contained Li2O (t)"
+                }
+              },
+              "grade": {
+                "value": 1.2,
+                "unit": "%",
+                "evidence": {
+                  "page": 2,
+                  "quote": "Indicated 100.0 1.2 1200000"
+                },
+                "unit_evidence": {
+                  "page": 2,
+                  "quote": "Category | Ore (Mt) | Li2O grade (%) | Contained Li2O (t)"
+                }
+              },
+              "contained_metal": {
+                "value": 1200000.0,
+                "unit": "t",
+                "evidence": {
+                  "page": 2,
+                  "quote": "Indicated 100.0 1.2 1200000"
+                },
+                "unit_evidence": {
+                  "page": 2,
+                  "quote": "Category | Ore (Mt) | Li2O grade (%) | Contained Li2O (t)"
+                }
+              }
+            },
+            {
+              "project": "Pilbara Demo",
+              "deposit": "Synthetic Deposit",
+              "effective_date": "2026-06-30",
+              "standard": "JORC",
+              "category": "Inferred",
+              "commodity": "Li2O",
+              "basis": "inclusive_of_reserves",
+              "cutoff": "0.2% Li2O",
+              "identity_evidence": [
+                {
+                  "page": 1,
+                  "quote": "Project: Pilbara Demo; Deposit: Synthetic Deposit"
+                },
+                {
+                  "page": 1,
+                  "quote": "Effective date: 2026-06-30; Reporting standard: JORC"
+                },
+                {
+                  "page": 1,
+                  "quote": "Resource basis: inclusive of reserves; Cutoff: 0.2% Li2O"
+                }
+              ],
+              "category_evidence": {
+                "page": 2,
+                "quote": "Inferred 50.0 0.9 450000"
+              },
+              "ore": {
+                "value": 50.0,
+                "unit": "Mt",
+                "evidence": {
+                  "page": 2,
+                  "quote": "Inferred 50.0 0.9 450000"
+                },
+                "unit_evidence": {
+                  "page": 2,
+                  "quote": "Category | Ore (Mt) | Li2O grade (%) | Contained Li2O (t)"
+                }
+              },
+              "grade": {
+                "value": 0.9,
+                "unit": "%",
+                "evidence": {
+                  "page": 2,
+                  "quote": "Inferred 50.0 0.9 450000"
+                },
+                "unit_evidence": {
+                  "page": 2,
+                  "quote": "Category | Ore (Mt) | Li2O grade (%) | Contained Li2O (t)"
+                }
+              },
+              "contained_metal": {
+                "value": 450000.0,
+                "unit": "t",
+                "evidence": {
+                  "page": 2,
+                  "quote": "Inferred 50.0 0.9 450000"
+                },
+                "unit_evidence": {
+                  "page": 2,
+                  "quote": "Category | Ore (Mt) | Li2O grade (%) | Contained Li2O (t)"
+                }
+              }
+            }
+          ],
+          "document_id": "8ac28e325b07a98b1bb217689d67e212eaa73ef9795469d4124f3eaa4c42230c",
+          "selected_pages": [
+            1,
+            2
+          ],
+          "selection": "all indicated/inferred keyword pages plus adjacent pages"
+        },
+        "warnings": [
+          "SYNTHETIC_DEMO: fixture response is replayed and checked against a generated PDF"
+        ],
+        "sources": [
+          "demo://pilbara-resources.pdf"
+        ],
+        "fetched_at": "2026-10-14T10:54:43.126215+00:00"
+      },
+      "elapsed_seconds": 0.006
+    }
+  ]
+}
