@@ -6,7 +6,7 @@
     "currency": "USD",
     "unit": "kg",
     "exchange": "LME",
-    "contract": "SYNTHETIC lithium hydroxide contract fixture",
+    "contract": "氢氧化锂合约（合成测试报价）",
     "source_url": "demo://prices/lithium",
     "synthetic": true
   },
@@ -17,7 +17,7 @@
     "currency": "USD",
     "unit": "kg",
     "exchange": "LME",
-    "contract": "SYNTHETIC lithium hydroxide contract fixture",
+    "contract": "氢氧化锂合约（合成测试报价）",
     "source_url": "demo://prices/lithium",
     "synthetic": true
   },
@@ -28,7 +28,7 @@
     "currency": "USD",
     "unit": "kg",
     "exchange": "LME",
-    "contract": "SYNTHETIC lithium hydroxide contract fixture",
+    "contract": "氢氧化锂合约（合成测试报价）",
     "source_url": "demo://prices/lithium",
     "synthetic": true
   },
@@ -39,7 +39,7 @@
     "currency": "USD",
     "unit": "kg",
     "exchange": "LME",
-    "contract": "SYNTHETIC lithium hydroxide contract fixture",
+    "contract": "氢氧化锂合约（合成测试报价）",
     "source_url": "demo://prices/lithium",
     "synthetic": true
   },
@@ -50,7 +50,7 @@
     "currency": "USD",
     "unit": "kg",
     "exchange": "LME",
-    "contract": "SYNTHETIC lithium hydroxide contract fixture",
+    "contract": "氢氧化锂合约（合成测试报价）",
     "source_url": "demo://prices/lithium",
     "synthetic": true
   }

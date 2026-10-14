@@ -1,8 +1,8 @@
 {
   "records": [
     {
-      "project": "Pilbara Demo",
-      "deposit": "Synthetic Deposit",
+      "project": "Pilbara 演示项目",
+      "deposit": "合成测试矿区",
       "effective_date": "2026-06-30",
       "standard": "JORC",
       "category": "Indicated",
@@ -12,15 +12,15 @@
       "identity_evidence": [
         {
           "page": 1,
-          "quote": "Project: Pilbara Demo; Deposit: Synthetic Deposit"
+          "quote": "项目：Pilbara 演示项目；矿区：合成测试矿区"
         },
         {
           "page": 1,
-          "quote": "Effective date: 2026-06-30; Reporting standard: JORC"
+          "quote": "生效日期：2026-06-30；披露标准：JORC"
         },
         {
           "page": 1,
-          "quote": "Resource basis: inclusive of reserves; Cutoff: 0.2% Li2O"
+          "quote": "资源口径：包含储量；边界品位：0.2% Li2O"
         }
       ],
       "category_evidence": {
@@ -36,7 +36,7 @@
         },
         "unit_evidence": {
           "page": 2,
-          "quote": "Category | Ore (Mt) | Li2O grade (%) | Contained Li2O (t)"
+          "quote": "分类 | 矿石量 (Mt) | Li2O 品位 (%) | 所含 Li2O (t)"
         }
       },
       "grade": {
@@ -48,7 +48,7 @@
         },
         "unit_evidence": {
           "page": 2,
-          "quote": "Category | Ore (Mt) | Li2O grade (%) | Contained Li2O (t)"
+          "quote": "分类 | 矿石量 (Mt) | Li2O 品位 (%) | 所含 Li2O (t)"
         }
       },
       "contained_metal": {
@@ -60,13 +60,13 @@
         },
         "unit_evidence": {
           "page": 2,
-          "quote": "Category | Ore (Mt) | Li2O grade (%) | Contained Li2O (t)"
+          "quote": "分类 | 矿石量 (Mt) | Li2O 品位 (%) | 所含 Li2O (t)"
         }
       }
     },
     {
-      "project": "Pilbara Demo",
-      "deposit": "Synthetic Deposit",
+      "project": "Pilbara 演示项目",
+      "deposit": "合成测试矿区",
       "effective_date": "2026-06-30",
       "standard": "JORC",
       "category": "Inferred",
@@ -76,15 +76,15 @@
       "identity_evidence": [
         {
           "page": 1,
-          "quote": "Project: Pilbara Demo; Deposit: Synthetic Deposit"
+          "quote": "项目：Pilbara 演示项目；矿区：合成测试矿区"
         },
         {
           "page": 1,
-          "quote": "Effective date: 2026-06-30; Reporting standard: JORC"
+          "quote": "生效日期：2026-06-30；披露标准：JORC"
         },
         {
           "page": 1,
-          "quote": "Resource basis: inclusive of reserves; Cutoff: 0.2% Li2O"
+          "quote": "资源口径：包含储量；边界品位：0.2% Li2O"
         }
       ],
       "category_evidence": {
@@ -100,7 +100,7 @@
         },
         "unit_evidence": {
           "page": 2,
-          "quote": "Category | Ore (Mt) | Li2O grade (%) | Contained Li2O (t)"
+          "quote": "分类 | 矿石量 (Mt) | Li2O 品位 (%) | 所含 Li2O (t)"
         }
       },
       "grade": {
@@ -112,7 +112,7 @@
         },
         "unit_evidence": {
           "page": 2,
-          "quote": "Category | Ore (Mt) | Li2O grade (%) | Contained Li2O (t)"
+          "quote": "分类 | 矿石量 (Mt) | Li2O 品位 (%) | 所含 Li2O (t)"
         }
       },
       "contained_metal": {
@@ -124,7 +124,7 @@
         },
         "unit_evidence": {
           "page": 2,
-          "quote": "Category | Ore (Mt) | Li2O grade (%) | Contained Li2O (t)"
+          "quote": "分类 | 矿石量 (Mt) | Li2O 品位 (%) | 所含 Li2O (t)"
         }
       }
     }

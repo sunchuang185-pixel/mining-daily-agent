@@ -1,16 +1,16 @@
 [
   {
-    "title": "Pilbara Demo announces a synthetic operating update",
+    "title": "Pilbara 演示项目发布运营维护进展（合成新闻）",
     "url": "demo://news/operations",
     "published_at": "2026-10-13T08:00:00Z",
-    "publisher": "Synthetic fixture",
-    "summary": "Synthetic maintenance review. Invented news for testing."
+    "publisher": "合成测试数据",
+    "summary": "演示项目正在评估选矿设备的维护安排。此内容为软件测试虚构，不代表真实运营情况。"
   },
   {
-    "title": "Pilbara Demo reviews synthetic expansion timetable",
+    "title": "Pilbara 演示项目评估扩建时间表（合成新闻）",
     "url": "demo://news/expansion",
     "published_at": "2026-10-12T08:00:00Z",
-    "publisher": "Synthetic fixture",
-    "summary": "Synthetic expansion review. Not a real announcement."
+    "publisher": "合成测试数据",
+    "summary": "演示项目正在复核扩建阶段的施工计划。此内容为软件测试虚构，不属于公司公告。"
   }
 ]
