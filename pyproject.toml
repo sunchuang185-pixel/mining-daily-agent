@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling>=1.25,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "mining-daily-agent"
+version = "0.1.0"
+description = "Three MCP servers and an evidence-first mining daily briefing agent"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "mcp>=1.12,<2", "pydantic>=2.11,<3", "httpx>=0.27,<1", "pymupdf>=1.24,<2",
+  "typer>=0.12,<1", "feedparser>=6,<7", "trafilatura>=2,<3", "lxml>=5,<7",
+]
+
+[project.scripts]
+mining-daily = "mining_daily.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/mining_daily"]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.9,<1", "mypy>=1.13,<2", "reportlab>=4,<5", "build>=1,<2"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+files = ["src"]
+
+[[tool.mypy.overrides]]
+module = ["pymupdf", "pymupdf.*", "feedparser", "trafilatura", "lxml", "lxml.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

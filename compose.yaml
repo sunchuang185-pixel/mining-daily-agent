@@ -1,0 +1,19 @@
+services:
+  agent:
+    build: .
+    image: mining-daily-agent:local
+    init: true
+    working_dir: /app
+    volumes:
+      - ./runs:/app/runs
+      - ./data/private:/app/data/private:ro
+    environment:
+      NEWS_RSS_URLS: ${NEWS_RSS_URLS:-https://www.mining.com/feed/}
+      EXTRACTOR_BASE_URL: ${EXTRACTOR_BASE_URL:-https://api.openai.com/v1}
+      EXTRACTOR_MODEL: ${EXTRACTOR_MODEL:-gpt-4o}
+      EXTRACTOR_API_KEY: ${EXTRACTOR_API_KEY:-}
+      MODEL_TIMEOUT_SECONDS: ${MODEL_TIMEOUT_SECONDS:-60}
+      MODEL_MAX_ATTEMPTS: ${MODEL_MAX_ATTEMPTS:-3}
+      LME_PRICE_CSV: ${LME_PRICE_CSV:-}
+      LME_PRICE_JSON_URL: ${LME_PRICE_JSON_URL:-}
+    command: ["brief", "给我生成一份关于 Pilbara 锂矿的今日简报", "--mode", "demo"]

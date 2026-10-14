@@ -1,0 +1,49 @@
+{
+  "mcpServers": {
+    "mining-news-mcp": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "-e",
+        "MINING_MODE=demo",
+        "--entrypoint",
+        "python",
+        "mining-daily-agent:local",
+        "-m",
+        "mining_daily.servers.news"
+      ]
+    },
+    "mineral-pdf-mcp": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "-e",
+        "MINING_MODE=demo",
+        "--entrypoint",
+        "python",
+        "mining-daily-agent:local",
+        "-m",
+        "mining_daily.servers.pdf"
+      ]
+    },
+    "lme-price-mcp": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "-e",
+        "MINING_MODE=demo",
+        "--entrypoint",
+        "python",
+        "mining-daily-agent:local",
+        "-m",
+        "mining_daily.servers.prices"
+      ]
+    }
+  }
+}
